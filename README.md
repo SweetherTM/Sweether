@@ -1,4 +1,4 @@
-برای آموزش ساخت ربات ما و ربات های دیگر در کانال ما عضو شوید.
+Join to Sweether Bot Channel for Create Anti-Spam Bot
 
-[عضویت][https://telegram.me/SweetherTM]
-
+Channel ID: [@SweetherTM](https://telegram.me/SweetherTM)
+Click for join to Telegram Channel.
