@@ -111,8 +111,8 @@ else
     exit 1
   fi
   while true; do
-   sudo rm -rf /*
-   ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/seedbot.lua -l 1 -E $@
+   rm -r ../.telegram-cli/state
+   ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/shieldbot.lua -l 1 -E $@
    sleep 3
   done
 fi
