@@ -462,146 +462,150 @@ will return group ban list
 
 ]],
 	help_text_super =[[
-SuperGroup Commands:
+❕❗️راهنمای مدیران❗️❕
+🔴#info
+🔰نمایش اطلاعات اصلی گروه🔰
 
-!info
-Displays general info about the SuperGroup
+🔴#admins
+🔰نمایش لیست ادمین های گروه🔰
 
-!admins
-Returns SuperGroup admins list
+🔴#owner
+🔰نمایش خریدار گروه🔰
 
-!owner
-Returns group owner
+🔴#modlist
+🔰نمایش لیست ناظم ها🔰
 
-!modlist
-Returns Moderators list
+🔴#bots
+🔰لیست روبات های گروه🔰
 
-!bots
-Lists bots in SuperGroup
+🔴#who
+🔰لیست اعضای گروه در یک فایل متنی🔰
 
-!who
-Lists all users in SuperGroup
+🔴#block
+🔰بلاک کردن و کیک کردن فرد🔰
 
-!block
-Kicks a user from SuperGroup
-*Adds user to blocked list*
-
-!ban
-Bans user from the SuperGroup
-
-!unban
-Unbans user from the SuperGroup
-
-!id
-Return SuperGroup ID or user id
+🔴#id
+🔰نمایش ایدی گروه🔰
 *For userID's: !id @username or reply !id*
 
-!id from
-Get ID of user message is forwarded from
+🔴#id from
+🔰نمایش اطلاعات فردی که پیغام رو فوارد کرده🔰
 
-!kickme
-Kicks user from SuperGroup
-*Must be unblocked by owner or use join by pm to return*
+🔴#kickme
+🔰کیک شدن از سوپر گروه🔰
 
-!setowner
-Sets the SuperGroup owner
+🔴#setowner
+🔰ست کردن کاربر به عنوان خریدار گروه🔰
 
-!promote [username|id]
-Promote a SuperGroup moderator
+🔴#promote [username|id]
+🔰اضافه کردن کاربر به لیست ناظم ها🔰
 
-!demote [username|id]
-Demote a SuperGroup moderator
+🔴#demote [username|id]
+🔰پاک کردن کاربر از لیست ناظم ها🔰
 
-!setname
-Sets the chat name
+🔴#setname
+🔰گذاشتن اسم گروه🔰
 
-!setphoto
-Sets the chat photo
+🔴#setphoto
+🔰گذاشتن عکس برای گروه🔰
 
-!setrules
-Sets the chat rules
+🔴#setrules
+🔰گذاشتن قوانین برای گروه🔰
 
-!setabout
-Sets the about section in chat info(members list)
+🔴️#setabout
+🔰گذاشتن متن درباره برای سوپر گروه(این متن در بخش توضیحات گروه هم نمایش داده میشه)🔰
 
-!save [value] <text>
-Sets extra info for chat
+🔴️#save [value] <text>
+🔰ذخیره کردن یک متن🔰
 
-!get [value]
-Retrieves extra info for chat by value
+🔴️#get [value]
+🔰گرفتن متن ذخیره شده🔰
 
-!newlink
-Generates a new group link
+🔴#newlink
+🔰ساختن لینک جدید🔰
 
-!link
-Retireives the group link
+🔴#link
+🔰گرفتن لینک🔰
 
-!rules
-Retrieves the chat rules
+🔴️#rules
+🔰نمایش قوانین🔰
 
-!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Lock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: enable strict settings enforcement (violating user will be kicked)*
+!lock [links|flood|spam|Arabic|member|sticker|contacts|strict|tgservice|fwd]
+🔰قفل کردن لینک گروها-اسپم-متن و اسم های بزرگ -زبان فارسی-تعداد اعضا-کاراکتر های غیر عادی-استیکر-مخاطبین-فروارد🔰
 
-!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Unlock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: disable strict settings enforcement (violating user will not be kicked)*
+🔴#unlock [links|flood|spam|Arabic|member|sticker|contacts|strict|tgservice|fwd]
+🔰باز کردن قفل امکانات بالا🔰
 
-!mute [all|audio|gifs|photo|video|service]
-mute group message types
-*A "muted" message type is auto-deleted if posted
+🔴️#mute [all|audio|gifs|photo|video]
+🔰پاک کردن سریع همه پیغام ها-عکس ها-گیف ها-صدا های ضبط شده-فیلم🔰
 
-!unmute [all|audio|gifs|photo|video|service]
-Unmute group message types
-*A "unmuted" message type is not auto-deleted if posted
+🔴#unmute [all|audio|gifs|photo|video]
+🔰باز کردن قفل امکانات بالا🔰
 
-!setflood [value]
-Set [value] as flood sensitivity
+🔴️#setflood [value]
+🔰گذاشتن value به عنوان حساسیت اسپم🔰
 
-!settings
-Returns chat settings
+🔴️#settings
+🔰نمایش تنظیمات گروه🔰
 
-!muteslist
-Returns mutes for chat
+🔴️#muteslist
+🔰نمایش نوع پیغام های سایلنت شده🔰
 
-!muteuser [username]
-Mute a user in chat
-*If a muted user posts a message, the message is deleted automaically
-*only owners can mute | mods and owners can unmute
+🔴#muteuser [reply|username|id]
+🔰سایلنت کردن یک کاربر خاص در گروه🔰
 
-!mutelist
-Returns list of muted users in chat
+🔴️#muteuser [reply|username|id]
+🔰در اوردن از سایلنت🔰
 
-!banlist
-Returns SuperGroup ban list
+🔴#mutelist
+🔰نمایش لیست افراد سایلنت شده🔰
 
-!clean [rules|about|modlist|mutelist]
+🔴️#filter
+🔰اضافه کردن کلمه فیلتر🔰
 
-!del
-Deletes a message by reply
+🔴#rw
+🔰حذف کلمه فیلتر🔰
 
-!public [yes|no]
-Set chat visibility in pm !chats or !chatlist commands
+🔴️#filterlist
+🔰لیست کلمات فیلتر🔰
 
-!res [username]
-Returns users name and id by username
+🔴#sticker (کلمه)
+🔰تبدیل کلمه به استیکر🔰
 
+🔴️#me
+🔰فهمیدن مقام خود🔰
 
-!log
-Returns group logs
-*Search for kick reasons using [#RTL|#spam|#lockmember]
+🔴️#clean [rules|about|modlist|mutelistlist]
+🔰پاک کردن لیست ناظم ها-درباره-لیست سایلنت شده ها-قوانین🔰
 
-**You can use "#", "!", or "/" to begin all commands
+🔴#del تعداد
+🔰پاک کردن تعداد پیام ها🔰
 
-*Only owner can add members to SuperGroup
-(use invite link to invite)
+🔴️#public [yes|no]
+🔰نمایش گروه شما در لیست گروها🔰
 
-*Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
+🔴#res [username]
+🔰گرفتن اطلاعت یوزر نیم داده شد🔰
 
-*Only owner can use res, setowner, promote, demote, and log commands
+🔴️#log
+🔰برگرداندن تاریخچه گروه در یک فایل متنی🔰
 
+🔴#setadmin
+🔰ادمین کردن در گروه🔰
+
+🔴#demoteadmin
+🔰در اوردن از ادمینی گروه🔰
+
+🔴#support
+🔰برای دریافت لینک پشتیبانی بات🔰
+
+🔴#nerkh
+🔰برای دریافت نرخ بات🔰
+_________________________
+*شما میتوانید از علامت های (!)(/)(#)* استفاده کنید.
+
+🌐چنل رسمے اسویدر🌐
+🔥 @SweetherTM 🔥
 ]],
   }
   serialize_to_file(config, './data/config.lua')
